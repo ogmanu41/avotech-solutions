@@ -3,636 +3,510 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Avotech Solutions - Food Processing & Industry Setup</title>
-    <meta name="description" content="Expert food processing and value-addition industry setup. Project planning, machinery sourcing, factory setup, and market linkage services.">
-    <meta name="keywords" content="food processing, industry setup, machinery sourcing, project management, Kenya">
-    
-    <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-    <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <!-- Google Fonts -->
+    <title>Avotech Solutions - Food Processing &amp; Industry Setup</title>
+    <meta name="description" content="Complete food processing and value-addition industry setup. From feasibility study to full market operation in Kenya and East Africa.">
+    <meta name="keywords" content="food processing, industry setup, machinery sourcing, project management, Kenya, East Africa">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
-    <!-- Custom CSS -->
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!-- Navigation Bar -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top shadow-sm">
-        <div class="container-xl">
-            <a class="navbar-brand fw-bold fs-5" href="#home">
-                <i class="fas fa-industry me-2 text-warning"></i>Avotech Solutions
+
+    <!-- Navigation -->
+    <nav id="navbar">
+        <div class="nav-inner">
+            <a href="#home" class="logo">
+                <svg width="28" height="28" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M8 24h16" stroke="#7C3AED" stroke-width="2" stroke-linecap="round"/>
+                    <path d="M10 22V12l4 4V12l4 4V12l4 4h2v6H10z" fill="none" stroke="#7C3AED" stroke-width="2" stroke-linejoin="round"/>
+                </svg>
+                <span class="logo-text">Avotech Solutions</span>
             </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-                <span class="navbar-toggler-icon"></span>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li class="mobile-cta-only"><a href="#contact" class="btn-mobile-cta">Get Free Consultation</a></li>
+            </ul>
+            <a href="#contact" class="btn-nav-cta">Get Free Consultation</a>
+            <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation menu">
+                <span></span><span></span><span></span>
             </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#portfolio">Portfolio</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#testimonials">Testimonials</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
-                </ul>
-            </div>
         </div>
     </nav>
 
-    <!-- Hero Section -->
-    <header id="home" class="hero-section text-white py-5">
-        <div class="container-xl py-5">
-            <div class="row align-items-center min-vh-75">
-                <div class="col-lg-6 mb-5 mb-lg-0">
-                    <h1 class="display-3 fw-800 mb-4 hero-title">Building Food Processing Industries from Scratch</h1>
-                    <p class="lead mb-4 hero-subtitle">From Idea to Market - Complete Industry Setup Solutions</p>
-                    <div class="hero-buttons d-flex flex-wrap gap-3">
-                        <a href="#contact" class="btn btn-warning btn-lg px-5 fw-600">Get Free Consultation</a>
-                        <a href="#services" class="btn btn-outline-light btn-lg px-5 fw-600">Learn More</a>
+    <!-- Hero -->
+    <section id="home" class="hero">
+
+        <!-- Background slideshow — real Unsplash photographs, sourced manually -->
+        <div class="hero-slides" aria-hidden="true">
+            <div class="hero-slide active" style="background-image: url('https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?auto=format&fit=crop&w=1600&q=80')"></div>
+            <div class="hero-slide" style="background-image: url('https://images.unsplash.com/photo-1616401784845-180882ba9ba8?auto=format&fit=crop&w=1600&q=80')"></div>
+            <div class="hero-slide" style="background-image: url('https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1?auto=format&fit=crop&w=1600&q=80')"></div>
+            <div class="hero-slide" style="background-image: url('https://images.unsplash.com/photo-1541519227354-08fa5d50c44d?auto=format&fit=crop&w=1600&q=80')"></div>
+        </div>
+        <!-- Solid overlay — keeps text legible over any slide -->
+        <div class="hero-overlay" aria-hidden="true"></div>
+
+        <div class="container hero-content-wrap">
+            <div class="hero-inner">
+                <div class="hero-content">
+                    <h1 class="hero-heading">Building food<br>processing<br>industries<br>from scratch.</h1>
+                    <p class="hero-sub">From initial feasibility to full market operation. Complete industry setup for Kenya and East Africa.</p>
+                    <div class="hero-actions">
+                        <a href="#contact" class="btn-primary">Get Free Consultation <span aria-hidden="true">&#8594;</span></a>
+                        <a href="#services" class="btn-secondary">Our Services</a>
                     </div>
                 </div>
-                <div class="col-lg-6">
-                    <img src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&w=600&q=80" alt="Business Setup" class="img-fluid rounded-4 shadow-lg hero-image">
-                </div>
+
             </div>
         </div>
-    </header>
 
-    <!-- About Section -->
-    <section id="about" class="py-5 bg-white">
-        <div class="container-xl">
-            <div class="row align-items-center g-5">
-                <div class="col-lg-6">
-                    <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&w=600&q=80" alt="Avotech Team" class="img-fluid rounded-4 shadow-lg">
+        <!-- Slide position indicators -->
+        <div class="hero-indicators" aria-hidden="true">
+            <button class="hero-dot active" data-slide="0" aria-label="Slide 1"></button>
+            <button class="hero-dot" data-slide="1" aria-label="Slide 2"></button>
+            <button class="hero-dot" data-slide="2" aria-label="Slide 3"></button>
+            <button class="hero-dot" data-slide="3" aria-label="Slide 4"></button>
+        </div>
+
+    </section>
+
+    <!-- Stats -->
+    <!-- NOTE: These numbers come from client-provided figures and must be verified before publication -->
+    <section class="stats-section">
+        <div class="container">
+            <div class="stats-grid">
+                <div class="stat-item">
+                    <div class="stat-num">100+</div>
+                    <div class="stat-label">Projects completed</div>
                 </div>
-                <div class="col-lg-6">
-                    <h2 class="display-5 fw-700 mb-4">About Avotech Solutions</h2>
-                    <p class="fs-5 mb-3 text-muted">Avotech Solutions is a leading consultancy firm specializing in establishing successful food processing and value-addition industries. With years of industry experience, we transform business ideas into profitable ventures.</p>
-                    <p class="fs-5 mb-4 text-muted">Our comprehensive approach covers every aspect of industry establishment, from initial feasibility studies to post-launch support and continuous optimization.</p>
-                    <ul class="list-unstyled">
-                        <li class="mb-3"><i class="fas fa-check-circle text-success me-3 fs-5"></i><span class="fs-5 fw-500">15+ Years Industry Experience</span></li>
-                        <li class="mb-3"><i class="fas fa-check-circle text-success me-3 fs-5"></i><span class="fs-5 fw-500">100+ Successful Projects</span></li>
-                        <li class="mb-3"><i class="fas fa-check-circle text-success me-3 fs-5"></i><span class="fs-5 fw-500">Expert Team of Professionals</span></li>
-                        <li class="mb-3"><i class="fas fa-check-circle text-success me-3 fs-5"></i><span class="fs-5 fw-500">End-to-End Support</span></li>
-                    </ul>
+                <div class="stat-item">
+                    <div class="stat-num">15</div>
+                    <div class="stat-label">Years of experience</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-num">50+</div>
+                    <div class="stat-label">Expert team members</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-num">98%</div>
+                    <div class="stat-label">Client satisfaction</div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Services Section -->
-    <section id="services" class="py-5 bg-light">
-        <div class="container-xl">
-            <div class="text-center mb-5">
-                <h2 class="display-5 fw-700 mb-3">Our Services</h2>
-                <p class="fs-5 text-muted">Comprehensive solutions for your food processing industry setup</p>
-            </div>
-            <div class="row g-4">
-                <div class="col-md-6 col-lg-4">
-                    <div class="service-card card h-100 border-0 shadow-sm rounded-4 overflow-hidden">
-                        <div class="service-card-icon">
-                            <i class="fas fa-building"></i>
-                        </div>
-                        <div class="card-body">
-                            <h5 class="card-title fw-600">Industry Setup</h5>
-                            <p class="card-text text-muted">Complete factory setup and infrastructure planning from site selection to commissioning.</p>
-                        </div>
+    <!-- How it works -->
+    <section id="services" class="how-section">
+        <div class="container">
+            <h2 class="section-heading">Step by step.</h2>
+            <div class="steps-grid">
+                <div class="step">
+                    <div class="step-num" aria-label="Step 1">1</div>
+                    <h3>We plan your project</h3>
+                    <p>Feasibility studies, site assessment, regulatory requirements, and a detailed business plan with realistic timelines and budgets.</p>
+                    <div class="step-ui" role="list">
+                        <div class="step-ui-row" role="listitem"><span class="step-ui-dot dot-green" aria-hidden="true"></span>Feasibility study</div>
+                        <div class="step-ui-row" role="listitem"><span class="step-ui-dot dot-green" aria-hidden="true"></span>Site assessment</div>
+                        <div class="step-ui-row" role="listitem"><span class="step-ui-dot dot-green" aria-hidden="true"></span>Business plan</div>
+                        <div class="step-ui-row" role="listitem"><span class="step-ui-dot dot-green" aria-hidden="true"></span>Regulatory compliance</div>
                     </div>
                 </div>
-
-                <div class="col-md-6 col-lg-4">
-                    <div class="service-card card h-100 border-0 shadow-sm rounded-4 overflow-hidden">
-                        <div class="service-card-icon">
-                            <i class="fas fa-cogs"></i>
-                        </div>
-                        <div class="card-body">
-                            <h5 class="card-title fw-600">Machinery Sourcing</h5>
-                            <p class="card-text text-muted">Professional equipment procurement with quality assurance and optimal pricing.</p>
-                        </div>
+                <div class="step">
+                    <div class="step-num" aria-label="Step 2">2</div>
+                    <h3>We build your facility</h3>
+                    <p>Machinery procurement from verified suppliers, factory construction oversight, installation, staff training, and full commissioning.</p>
+                    <div class="step-ui" role="list">
+                        <div class="step-ui-row" role="listitem"><span class="step-ui-dot dot-purple" aria-hidden="true"></span>Machinery sourcing</div>
+                        <div class="step-ui-row" role="listitem"><span class="step-ui-dot dot-purple" aria-hidden="true"></span>Factory setup</div>
+                        <div class="step-ui-row" role="listitem"><span class="step-ui-dot dot-purple" aria-hidden="true"></span>Installation</div>
+                        <div class="step-ui-row" role="listitem"><span class="step-ui-dot dot-purple" aria-hidden="true"></span>Staff training</div>
                     </div>
                 </div>
-
-                <div class="col-md-6 col-lg-4">
-                    <div class="service-card card h-100 border-0 shadow-sm rounded-4 overflow-hidden">
-                        <div class="service-card-icon">
-                            <i class="fas fa-network-wired"></i>
-                        </div>
-                        <div class="card-body">
-                            <h5 class="card-title fw-600">Market Linkages</h5>
-                            <p class="card-text text-muted">Strategic connections with suppliers, distributors, and end-market customers.</p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-md-6 col-lg-4">
-                    <div class="service-card card h-100 border-0 shadow-sm rounded-4 overflow-hidden">
-                        <div class="service-card-icon">
-                            <i class="fas fa-tasks"></i>
-                        </div>
-                        <div class="card-body">
-                            <h5 class="card-title fw-600">Project Management</h5>
-                            <p class="card-text text-muted">End-to-end project oversight ensuring timely delivery and budget compliance.</p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-md-6 col-lg-4">
-                    <div class="service-card card h-100 border-0 shadow-sm rounded-4 overflow-hidden">
-                        <div class="service-card-icon">
-                            <i class="fas fa-graduation-cap"></i>
-                        </div>
-                        <div class="card-body">
-                            <h5 class="card-title fw-600">Training & Support</h5>
-                            <p class="card-text text-muted">Staff training, technical documentation, and ongoing operational support.</p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-md-6 col-lg-4">
-                    <div class="service-card card h-100 border-0 shadow-sm rounded-4 overflow-hidden">
-                        <div class="service-card-icon">
-                            <i class="fas fa-chart-line"></i>
-                        </div>
-                        <div class="card-body">
-                            <h5 class="card-title fw-600">Business Consulting</h5>
-                            <p class="card-text text-muted">Market analysis, feasibility studies, and business planning services.</p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-md-6 col-lg-4">
-                    <div class="service-card card h-100 border-0 shadow-sm rounded-4 overflow-hidden">
-                        <div class="service-card-icon">
-                            <i class="fas fa-file-contract"></i>
-                        </div>
-                        <div class="card-body">
-                            <h5 class="card-title fw-600">Compliance & Licensing</h5>
-                            <p class="card-text text-muted">Assistance with regulatory compliance and industry certifications.</p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-md-6 col-lg-4">
-                    <div class="service-card card h-100 border-0 shadow-sm rounded-4 overflow-hidden">
-                        <div class="service-card-icon">
-                            <i class="fas fa-handshake"></i>
-                        </div>
-                        <div class="card-body">
-                            <h5 class="card-title fw-600">Financing Support</h5>
-                            <p class="card-text text-muted">Guidance on funding options, loans, and investor connections.</p>
-                        </div>
+                <div class="step">
+                    <div class="step-num" aria-label="Step 3">3</div>
+                    <h3>We connect your market</h3>
+                    <p>Supplier networks, distributor relationships, market entry strategy, and 12 months of post-launch operational support.</p>
+                    <div class="step-ui" role="list">
+                        <div class="step-ui-row" role="listitem"><span class="step-ui-dot dot-orange" aria-hidden="true"></span>Market linkage</div>
+                        <div class="step-ui-row" role="listitem"><span class="step-ui-dot dot-orange" aria-hidden="true"></span>Distributor network</div>
+                        <div class="step-ui-row" role="listitem"><span class="step-ui-dot dot-orange" aria-hidden="true"></span>Growth strategy</div>
+                        <div class="step-ui-row" role="listitem"><span class="step-ui-dot dot-orange" aria-hidden="true"></span>Ongoing support</div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Portfolio Section -->
-    <section id="portfolio" class="py-5 bg-white">
-        <div class="container-xl">
-            <div class="text-center mb-5">
-                <h2 class="display-5 fw-700 mb-3">Our Portfolio</h2>
-                <p class="fs-5 text-muted">Showcasing our successful projects across various sectors</p>
+    <!-- Colorful services section -->
+    <section class="services-color-section">
+        <div class="container">
+            <div class="services-color-inner">
+                <div class="services-color-content">
+                    <p class="section-label">What we set up</p>
+                    <h2 class="services-color-heading">
+                        Complete infrastructure for
+                        <span class="c-purple">fruit processing,</span>
+                        <span class="c-green">dairy factories,</span>
+                        <span class="c-orange">grain milling,</span>
+                        <span class="c-pink">bakery setups,</span>
+                        <span class="c-blue">beverage plants,</span>
+                        <span class="c-teal">meat processing,</span>
+                        and market linkage.
+                    </h2>
+                </div>
+                <div class="services-color-aside">
+                    <p>Every project is different. We scope your specific requirements and build a solution that fits your budget, location, and target market.</p>
+                    <a href="#contact" class="link-arrow">Talk to our team &#8594;</a>
+                </div>
             </div>
-            <div class="row g-4">
-                <div class="col-md-6 col-lg-4">
-                    <div class="portfolio-card card border-0 shadow-sm rounded-4 overflow-hidden h-100">
-                        <div class="portfolio-image-container">
-                            <img src="https://images.unsplash.com/photo-1578500494158-246afb0d04de?auto=format&fit=crop&w=500&q=80" alt="Fruit Processing Plant" class="card-img-top">
-                            <div class="portfolio-overlay">
-                                <button class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#portfolio1">View Details</button>
-                            </div>
+        </div>
+    </section>
+
+    <!-- About / Feature rows -->
+    <section id="about" class="features-section">
+        <div class="container">
+
+            <div class="feature-row">
+                <div class="feature-text">
+                    <h2>End-to-end project management with no surprises</h2>
+                    <p>We manage every phase from concept to commissioning. You deal with one team, one contract, and one point of accountability — not a fragmented network of contractors and consultants.</p>
+                    <a href="#contact" class="link-arrow">Discuss your project &#8594;</a>
+                </div>
+                <div class="feature-visual">
+                    <div class="feature-card">
+                        <div class="feature-card-header">TIMELINE</div>
+                        <div class="feature-card-row">
+                            <span>Phase 1: Planning</span>
+                            <div class="progress-bar"><div class="progress-fill" style="width:100%"></div></div>
                         </div>
-                        <div class="card-body">
-                            <h5 class="card-title fw-600">Fruit Processing Plant</h5>
-                            <p class="card-text text-muted">State-of-the-art facility producing juice, jams, and dried fruits.</p>
-                            <p class="text-success fw-600"><i class="fas fa-arrow-trend-up"></i> 300% Production Increase</p>
+                        <div class="feature-card-row">
+                            <span>Phase 2: Build</span>
+                            <div class="progress-bar"><div class="progress-fill" style="width:65%"></div></div>
+                        </div>
+                        <div class="feature-card-row">
+                            <span>Phase 3: Launch</span>
+                            <div class="progress-bar"><div class="progress-fill pf-pending" style="width:20%"></div></div>
                         </div>
                     </div>
                 </div>
+            </div>
 
-                <div class="col-md-6 col-lg-4">
-                    <div class="portfolio-card card border-0 shadow-sm rounded-4 overflow-hidden h-100">
-                        <div class="portfolio-image-container">
-                            <img src="https://images.unsplash.com/photo-1599974360606-8e4e47298f05?auto=format&fit=crop&w=500&q=80" alt="Dairy Processing Unit" class="card-img-top">
-                            <div class="portfolio-overlay">
-                                <button class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#portfolio2">View Details</button>
-                            </div>
+            <div class="feature-row feature-row-alt">
+                <div class="feature-text">
+                    <h2>Machinery sourced from verified suppliers at optimal cost</h2>
+                    <p>We have established relationships with equipment manufacturers across Kenya, China, India, and Europe. You get quality machinery at the right price, delivered and installed on schedule.</p>
+                    <a href="#contact" class="link-arrow">Ask about machinery sourcing &#8594;</a>
+                </div>
+                <div class="feature-visual">
+                    <div class="feature-card">
+                        <div class="feature-card-header">EQUIPMENT LOG</div>
+                        <div class="feature-card-item">
+                            <span class="item-badge badge-green">Sourced</span>
+                            <span>Fruit washing line</span>
                         </div>
-                        <div class="card-body">
-                            <h5 class="card-title fw-600">Dairy Processing Unit</h5>
-                            <p class="card-text text-muted">Modern dairy facility with pasteurization and cheese production.</p>
-                            <p class="text-success fw-600"><i class="fas fa-check-circle"></i> Fully Operational</p>
+                        <div class="feature-card-item">
+                            <span class="item-badge badge-green">Sourced</span>
+                            <span>Juice extractor</span>
+                        </div>
+                        <div class="feature-card-item">
+                            <span class="item-badge badge-blue">In transit</span>
+                            <span>Pasteurizer unit</span>
+                        </div>
+                        <div class="feature-card-item">
+                            <span class="item-badge badge-gray">Pending</span>
+                            <span>Packaging line</span>
                         </div>
                     </div>
                 </div>
+            </div>
 
-                <div class="col-md-6 col-lg-4">
-                    <div class="portfolio-card card border-0 shadow-sm rounded-4 overflow-hidden h-100">
-                        <div class="portfolio-image-container">
-                            <img src="https://images.unsplash.com/photo-1541519227354-08fa5d50c44d?auto=format&fit=crop&w=500&q=80" alt="Industrial Bakery" class="card-img-top">
-                            <div class="portfolio-overlay">
-                                <button class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#portfolio3">View Details</button>
-                            </div>
+            <div class="feature-row">
+                <div class="feature-text">
+                    <h2>Market connections that generate revenue from day one</h2>
+                    <p>We do not build the factory and walk away. Our market linkage team connects you with distributors, retailers, export channels, and institutional buyers before your product leaves the line.</p>
+                    <a href="#contact" class="link-arrow">View market linkage approach &#8594;</a>
+                </div>
+                <div class="feature-visual">
+                    <div class="feature-card">
+                        <div class="feature-card-header">MARKET CONNECTIONS</div>
+                        <div class="feature-card-item">
+                            <span class="item-badge badge-green">Active</span>
+                            <span>Local distributors</span>
                         </div>
-                        <div class="card-body">
-                            <h5 class="card-title fw-600">Industrial Bakery</h5>
-                            <p class="card-text text-muted">Commercial bakery with advanced ovens and automated packaging.</p>
-                            <p class="text-success fw-600"><i class="fas fa-award"></i> Industry Leader</p>
+                        <div class="feature-card-item">
+                            <span class="item-badge badge-green">Active</span>
+                            <span>Retail chains</span>
                         </div>
+                        <div class="feature-card-item">
+                            <span class="item-badge badge-green">Active</span>
+                            <span>Institutional buyers</span>
+                        </div>
+                        <div class="feature-card-item">
+                            <span class="item-badge badge-blue">In progress</span>
+                            <span>Export channels</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Portfolio -->
+    <section id="portfolio" class="portfolio-section">
+        <div class="container">
+            <h2 class="section-heading">Projects we have built.</h2>
+            <div class="portfolio-grid">
+                <div class="portfolio-item">
+                    <div class="portfolio-img">
+                        <img src="https://images.unsplash.com/photo-1616401784845-180882ba9ba8?auto=format&fit=crop&w=600&q=80" alt="Fruit Processing Plant project">
+                    </div>
+                    <div class="portfolio-info">
+                        <p class="portfolio-tag">Fruit Processing</p>
+                        <h3>Fruit Processing Plant</h3>
+                        <p>State-of-the-art facility producing juice, jams, and dried fruits with a significant increase in production capacity.</p>
+                        <button class="link-arrow" id="open-portfolio1" data-modal="portfolio1">View project &#8594;</button>
+                    </div>
+                </div>
+                <div class="portfolio-item">
+                    <div class="portfolio-img">
+                        <img src="https://images.unsplash.com/photo-1527018601619-a508a2be00cd?auto=format&fit=crop&w=600&q=80" alt="Dairy Processing Unit project">
+                    </div>
+                    <div class="portfolio-info">
+                        <p class="portfolio-tag">Dairy Processing</p>
+                        <h3>Dairy Processing Unit</h3>
+                        <p>Modern dairy facility with pasteurization and cheese production lines. Fully operational with over 80 employees.</p>
+                        <button class="link-arrow" id="open-portfolio2" data-modal="portfolio2">View project &#8594;</button>
+                    </div>
+                </div>
+                <div class="portfolio-item">
+                    <div class="portfolio-img">
+                        <img src="https://images.unsplash.com/photo-1541519227354-08fa5d50c44d?auto=format&fit=crop&w=600&q=80" alt="Industrial Bakery project">
+                    </div>
+                    <div class="portfolio-info">
+                        <p class="portfolio-tag">Commercial Bakery</p>
+                        <h3>Industrial Bakery</h3>
+                        <p>Commercial bakery with advanced ovens and automated packaging. Regional distribution network established at launch.</p>
+                        <button class="link-arrow" id="open-portfolio3" data-modal="portfolio3">View project &#8594;</button>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Statistics Section -->
-    <section class="py-5 bg-dark text-white">
-        <div class="container-xl">
-            <div class="row text-center g-4">
-                <div class="col-md-3">
-                    <div class="stat-box">
-                        <h3 class="display-4 fw-700 mb-2 stat-number" data-target="100">0</h3>
-                        <p class="mb-0 fs-5">Successful Projects</p>
+
+
+    <!-- FAQ -->
+    <section class="faq-section">
+        <div class="container">
+            <h2 class="section-heading">Common questions.</h2>
+            <div class="faq-list" role="list">
+
+                <div class="faq-item" role="listitem">
+                    <button class="faq-question" id="faq-btn-1" aria-expanded="false" aria-controls="faq-answer-1" data-faq="faq-answer-1">
+                        How long does a typical project take?
+                        <span class="faq-icon" aria-hidden="true">+</span>
+                    </button>
+                    <div class="faq-answer" id="faq-answer-1" role="region" aria-labelledby="faq-btn-1">
+                        Most projects take 6 to 12 months depending on scale and complexity. We provide a detailed milestone timeline during the initial consultation.
                     </div>
                 </div>
-                <div class="col-md-3">
-                    <div class="stat-box">
-                        <h3 class="display-4 fw-700 mb-2 stat-number" data-target="15">0</h3>
-                        <p class="mb-0 fs-5">Years Experience</p>
+
+                <div class="faq-item" role="listitem">
+                    <button class="faq-question" id="faq-btn-2" aria-expanded="false" aria-controls="faq-answer-2" data-faq="faq-answer-2">
+                        What is the investment range?
+                        <span class="faq-icon" aria-hidden="true">+</span>
+                    </button>
+                    <div class="faq-answer" id="faq-answer-2" role="region" aria-labelledby="faq-btn-2">
+                        Projects range from small-scale operations (KES 500K to 2M) to large industrial plants (KES 50M+). We scope each project individually and build a solution that fits your budget.
                     </div>
                 </div>
-                <div class="col-md-3">
-                    <div class="stat-box">
-                        <h3 class="display-4 fw-700 mb-2 stat-number" data-target="50">0</h3>
-                        <p class="mb-0 fs-5">Expert Staff</p>
+
+                <div class="faq-item" role="listitem">
+                    <button class="faq-question" id="faq-btn-3" aria-expanded="false" aria-controls="faq-answer-3" data-faq="faq-answer-3">
+                        Do you provide post-launch support?
+                        <span class="faq-icon" aria-hidden="true">+</span>
+                    </button>
+                    <div class="faq-answer" id="faq-answer-3" role="region" aria-labelledby="faq-btn-3">
+                        Yes. We provide 12 months of operational support including staff training refreshers, equipment troubleshooting, and process optimization. Extended support packages are available.
                     </div>
                 </div>
-                <div class="col-md-3">
-                    <div class="stat-box">
-                        <h3 class="display-4 fw-700 mb-2 stat-number" data-target="98">0</h3>
-                        <p class="mb-0 fs-5">Client Satisfaction %</p>
+
+                <div class="faq-item" role="listitem">
+                    <button class="faq-question" id="faq-btn-4" aria-expanded="false" aria-controls="faq-answer-4" data-faq="faq-answer-4">
+                        Which regions do you operate in?
+                        <span class="faq-icon" aria-hidden="true">+</span>
+                    </button>
+                    <div class="faq-answer" id="faq-answer-4" role="region" aria-labelledby="faq-btn-4">
+                        We primarily operate in Kenya. We have completed projects across East Africa and will take on regional engagements. Contact us for region-specific inquiries.
                     </div>
                 </div>
+
+                <div class="faq-item" role="listitem">
+                    <button class="faq-question" id="faq-btn-5" aria-expanded="false" aria-controls="faq-answer-5" data-faq="faq-answer-5">
+                        What makes Avotech different from other consultancies?
+                        <span class="faq-icon" aria-hidden="true">+</span>
+                    </button>
+                    <div class="faq-answer" id="faq-answer-5" role="region" aria-labelledby="faq-btn-5">
+                        We provide genuine end-to-end delivery, not just advice. One team handles planning, procurement, construction, training, and market linkage. You are not managing multiple contractors.
+                    </div>
+                </div>
+
             </div>
         </div>
     </section>
 
-    <!-- Testimonials Section -->
-    <section id="testimonials" class="py-5 bg-light">
-        <div class="container-xl">
-            <div class="text-center mb-5">
-                <h2 class="display-5 fw-700 mb-3">What Our Clients Say</h2>
-                <p class="fs-5 text-muted">Real success stories from our valued clients</p>
-            </div>
-            <div class="row g-4">
-                <div class="col-md-6 col-lg-4">
-                    <div class="testimonial-card card border-0 shadow-sm rounded-4 h-100">
-                        <div class="card-body">
-                            <div class="rating mb-3">
-                                <i class="fas fa-star text-warning"></i>
-                                <i class="fas fa-star text-warning"></i>
-                                <i class="fas fa-star text-warning"></i>
-                                <i class="fas fa-star text-warning"></i>
-                                <i class="fas fa-star text-warning"></i>
-                            </div>
-                            <p class="card-text fs-5 mb-4">"Avotech Solutions transformed our business idea into reality. Their professionalism and attention to detail were exceptional."</p>
-                            <div class="d-flex align-items-center">
-                                <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=100&q=80" alt="John Kipchoge" class="rounded-circle me-3" width="50" height="50">
-                                <div>
-                                    <h6 class="mb-0 fw-600">John Kipchoge</h6>
-                                    <small class="text-muted">Fruit Processing Entrepreneur</small>
-                                </div>
-                            </div>
+    <!-- Contact -->
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <div class="contact-inner">
+                <div class="contact-info-col">
+                    <h2>Start your project.</h2>
+                    <p>Tell us about your idea. We will respond within 24 business hours.</p>
+                    <div class="contact-details">
+                        <div class="contact-detail">
+                            <span class="contact-detail-label">Phone</span>
+                            <a href="tel:+254703178385">+254 703 178 385</a>
+                        </div>
+                        <div class="contact-detail">
+                            <span class="contact-detail-label">Email</span>
+                            <a href="mailto:avotechsolutions@yahoo.com">avotechsolutions@yahoo.com</a>
+                        </div>
+                        <div class="contact-detail">
+                            <span class="contact-detail-label">Hours</span>
+                            <span>Mon–Fri, Sun: 8:00 AM – 5:00 PM</span>
                         </div>
                     </div>
                 </div>
-
-                <div class="col-md-6 col-lg-4">
-                    <div class="testimonial-card card border-0 shadow-sm rounded-4 h-100">
-                        <div class="card-body">
-                            <div class="rating mb-3">
-                                <i class="fas fa-star text-warning"></i>
-                                <i class="fas fa-star text-warning"></i>
-                                <i class="fas fa-star text-warning"></i>
-                                <i class="fas fa-star text-warning"></i>
-                                <i class="fas fa-star text-warning"></i>
+                <div class="contact-form-col">
+                    <form id="contactForm" method="POST" action="contact.php" novalidate>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="fullName">Full Name <span aria-hidden="true">*</span></label>
+                                <input type="text" id="fullName" name="fullName" placeholder="Your full name" required autocomplete="name">
                             </div>
-                            <p class="card-text fs-5 mb-4">"From concept to operation, they handled everything professionally. Our factory is now running smoothly with 100+ employees."</p>
-                            <div class="d-flex align-items-center">
-                                <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=100&q=80" alt="Grace Mwangi" class="rounded-circle me-3" width="50" height="50">
-                                <div>
-                                    <h6 class="mb-0 fw-600">Grace Mwangi</h6>
-                                    <small class="text-muted">Dairy Industry Owner</small>
-                                </div>
+                            <div class="form-group">
+                                <label for="email">Email <span aria-hidden="true">*</span></label>
+                                <input type="email" id="email" name="email" placeholder="your@email.com" required autocomplete="email">
                             </div>
                         </div>
-                    </div>
-                </div>
-
-                <div class="col-md-6 col-lg-4">
-                    <div class="testimonial-card card border-0 shadow-sm rounded-4 h-100">
-                        <div class="card-body">
-                            <div class="rating mb-3">
-                                <i class="fas fa-star text-warning"></i>
-                                <i class="fas fa-star text-warning"></i>
-                                <i class="fas fa-star text-warning"></i>
-                                <i class="fas fa-star text-warning"></i>
-                                <i class="fas fa-star text-warning"></i>
-                            </div>
-                            <p class="card-text fs-5 mb-4">"Highly recommended! Their team provided invaluable guidance on machinery selection and market linkage strategies."</p>
-                            <div class="d-flex align-items-center">
-                                <img src="https://images.unsplash.com/photo-1507842217343-583f20270319?auto=format&fit=crop&w=100&q=80" alt="Peter Omondi" class="rounded-circle me-3" width="50" height="50">
-                                <div>
-                                    <h6 class="mb-0 fw-600">Peter Omondi</h6>
-                                    <small class="text-muted">Beverage Manufacturer</small>
-                                </div>
-                            </div>
+                        <div class="form-group">
+                            <label for="phone">Phone Number</label>
+                            <input type="tel" id="phone" name="phone" placeholder="+254 700 000 000" autocomplete="tel">
                         </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- FAQ Section -->
-    <section class="py-5 bg-white">
-        <div class="container-xl">
-            <div class="text-center mb-5">
-                <h2 class="display-5 fw-700 mb-3">Frequently Asked Questions</h2>
-                <p class="fs-5 text-muted">Find answers to common questions about our services</p>
-            </div>
-            <div class="row">
-                <div class="col-lg-8 mx-auto">
-                    <div class="accordion" id="faqAccordion">
-                        <div class="accordion-item border-0 mb-3 rounded-3 shadow-sm">
-                            <h2 class="accordion-header">
-                                <button class="accordion-button fw-600" type="button" data-bs-toggle="collapse" data-bs-target="#faq1">
-                                    How long does a typical project take?
-                                </button>
-                            </h2>
-                            <div id="faq1" class="accordion-collapse collapse show" data-bs-parent="#faqAccordion">
-                                <div class="accordion-body">
-                                    Most projects take 6-12 months depending on scale and complexity. We provide a detailed timeline during the consultation phase.
-                                </div>
-                            </div>
+                        <div class="form-group">
+                            <label for="subject">Subject <span aria-hidden="true">*</span></label>
+                            <input type="text" id="subject" name="subject" placeholder="What is this about?" required>
                         </div>
-
-                        <div class="accordion-item border-0 mb-3 rounded-3 shadow-sm">
-                            <h2 class="accordion-header">
-                                <button class="accordion-button fw-600 collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq2">
-                                    What is your investment range?
-                                </button>
-                            </h2>
-                            <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
-                                <div class="accordion-body">
-                                    Projects range from small-scale operations (KES 500K - 2M) to large industrial plants (KES 50M+). We customize solutions to fit your budget.
-                                </div>
-                            </div>
+                        <div class="form-group">
+                            <label for="message">Message <span aria-hidden="true">*</span></label>
+                            <textarea id="message" name="message" rows="5" placeholder="Tell us about your project..." required></textarea>
                         </div>
-
-                        <div class="accordion-item border-0 mb-3 rounded-3 shadow-sm">
-                            <h2 class="accordion-header">
-                                <button class="accordion-button fw-600 collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq3">
-                                    Do you provide post-launch support?
-                                </button>
-                            </h2>
-                            <div id="faq3" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
-                                <div class="accordion-body">
-                                    Yes! We provide 12 months of operational support including staff training, troubleshooting, and optimization guidance.
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="accordion-item border-0 mb-3 rounded-3 shadow-sm">
-                            <h2 class="accordion-header">
-                                <button class="accordion-button fw-600 collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq4">
-                                    Which regions do you operate in?
-                                </button>
-                            </h2>
-                            <div id="faq4" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
-                                <div class="accordion-body">
-                                    We primarily operate in Kenya but have experience with projects in East Africa. Contact us for region-specific inquiries.
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="accordion-item border-0 mb-3 rounded-3 shadow-sm">
-                            <h2 class="accordion-header">
-                                <button class="accordion-button fw-600 collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq5">
-                                    What makes you different from competitors?
-                                </button>
-                            </h2>
-                            <div id="faq5" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
-                                <div class="accordion-body">
-                                    We offer end-to-end solutions with proven track record, dedicated project managers, and genuine commitment to client success beyond project completion.
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Contact Section -->
-    <section id="contact" class="py-5 bg-light">
-        <div class="container-xl">
-            <div class="text-center mb-5">
-                <h2 class="display-5 fw-700 mb-3">Get In Touch</h2>
-                <p class="fs-5 text-muted">We're here to help you build your success story</p>
-            </div>
-
-            <div class="row g-4 mb-5">
-                <div class="col-lg-4">
-                    <div class="contact-info card border-0 shadow-sm rounded-4 p-4 h-100">
-                        <div class="contact-icon mb-3">
-                            <i class="fas fa-phone"></i>
-                        </div>
-                        <h5 class="mb-3 fw-600">Phone</h5>
-                        <p class="mb-0"><a href="tel:+254703178385" class="text-decoration-none">+254 703 178 385</a></p>
-                    </div>
-                </div>
-
-                <div class="col-lg-4">
-                    <div class="contact-info card border-0 shadow-sm rounded-4 p-4 h-100">
-                        <div class="contact-icon mb-3">
-                            <i class="fas fa-envelope"></i>
-                        </div>
-                        <h5 class="mb-3 fw-600">Email</h5>
-                        <p class="mb-0"><a href="mailto:avotechsolutions@yahoo.com" class="text-decoration-none">avotechsolutions@yahoo.com</a></p>
-                    </div>
-                </div>
-
-                <div class="col-lg-4">
-                    <div class="contact-info card border-0 shadow-sm rounded-4 p-4 h-100">
-                        <div class="contact-icon mb-3">
-                            <i class="fas fa-clock"></i>
-                        </div>
-                        <h5 class="mb-3 fw-600">Working Hours</h5>
-                        <p class="mb-0">Mon–Fri & Sun<br>8:00 AM – 5:00 PM</p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="row">
-                <div class="col-lg-8 mx-auto">
-                    <div class="card border-0 shadow-lg rounded-4 p-5">
-                        <h4 class="mb-4 fw-600">Send Us Your Inquiry</h4>
-                        <form id="contactForm" method="POST" action="contact.php">
-                            <div class="mb-3">
-                                <label for="fullName" class="form-label fw-500">Full Name <span class="text-danger">*</span></label>
-                                <input type="text" id="fullName" name="fullName" class="form-control rounded-3" placeholder="Enter your full name" required>
-                            </div>
-
-                            <div class="mb-3">
-                                <label for="email" class="form-label fw-500">Email Address <span class="text-danger">*</span></label>
-                                <input type="email" id="email" name="email" class="form-control rounded-3" placeholder="Enter your email" required>
-                            </div>
-
-                            <div class="mb-3">
-                                <label for="phone" class="form-label fw-500">Phone Number</label>
-                                <input type="tel" id="phone" name="phone" class="form-control rounded-3" placeholder="Enter your phone number">
-                            </div>
-
-                            <div class="mb-3">
-                                <label for="subject" class="form-label fw-500">Subject <span class="text-danger">*</span></label>
-                                <input type="text" id="subject" name="subject" class="form-control rounded-3" placeholder="What is this about?" required>
-                            </div>
-
-                            <div class="mb-3">
-                                <label for="message" class="form-label fw-500">Message <span class="text-danger">*</span></label>
-                                <textarea id="message" name="message" class="form-control rounded-3" rows="5" placeholder="Tell us about your project..." required></textarea>
-                            </div>
-
-                            <div class="d-grid">
-                                <button type="submit" class="btn btn-warning btn-lg fw-600 rounded-3">
-                                    <i class="fas fa-paper-plane me-2"></i>Send Inquiry
-                                </button>
-                            </div>
-                        </form>
-                        <div id="formMessage" class="mt-3 alert d-none" role="alert"></div>
-                    </div>
+                        <button type="submit" class="btn-primary btn-submit" id="submitBtn">
+                            Send Inquiry &#8594;
+                        </button>
+                        <div id="formMessage" class="form-message" hidden role="alert"></div>
+                    </form>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Footer -->
-    <footer class="bg-dark text-white py-5">
-        <div class="container-xl">
-            <div class="row g-4 mb-4">
-                <div class="col-md-4">
-                    <h5 class="mb-3 fw-600"><i class="fas fa-industry me-2 text-warning"></i>Avotech Solutions</h5>
-                    <p class="text-muted">Building food processing industries from concept to successful market operation.</p>
+    <footer>
+        <div class="container">
+            <div class="footer-inner">
+                <div class="footer-brand">
+                    <a href="#home" class="logo">
+                        <svg width="28" height="28" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M8 24h16" stroke="#7C3AED" stroke-width="2" stroke-linecap="round"/>
+                            <path d="M10 22V12l4 4V12l4 4V12l4 4h2v6H10z" fill="none" stroke="#7C3AED" stroke-width="2" stroke-linejoin="round"/>
+                        </svg>
+                        <span class="logo-text">Avotech Solutions</span>
+                    </a>
+                    <p>Building food processing industries from concept to successful market operation.</p>
                 </div>
-
-                <div class="col-md-4">
-                    <h5 class="mb-3 fw-600">Quick Links</h5>
-                    <ul class="list-unstyled">
-                        <li><a href="#services" class="text-muted text-decoration-none">Services</a></li>
-                        <li><a href="#portfolio" class="text-muted text-decoration-none">Portfolio</a></li>
-                        <li><a href="#contact" class="text-muted text-decoration-none">Contact</a></li>
-                        <li><a href="#testimonials" class="text-muted text-decoration-none">Testimonials</a></li>
+                <nav class="footer-links" aria-label="Footer navigation">
+                    <span class="footer-links-label">Quick Links</span>
+                    <ul>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#portfolio">Portfolio</a></li>
+                        <li><a href="#contact">Contact</a></li>
                     </ul>
-                </div>
-
-                <div class="col-md-4">
-                    <h5 class="mb-3 fw-600">Follow Us</h5>
-                    <div class="social-links">
-                        <a href="#" class="text-muted text-decoration-none me-3"><i class="fab fa-facebook-f"></i></a>
-                        <a href="#" class="text-muted text-decoration-none me-3"><i class="fab fa-twitter"></i></a>
-                        <a href="#" class="text-muted text-decoration-none me-3"><i class="fab fa-linkedin-in"></i></a>
-                        <a href="#" class="text-muted text-decoration-none"><i class="fab fa-instagram"></i></a>
-                    </div>
+                </nav>
+                <div class="footer-contact">
+                    <span class="footer-links-label">Contact</span>
+                    <a href="tel:+254703178385">+254 703 178 385</a>
+                    <a href="mailto:avotechsolutions@yahoo.com">avotechsolutions@yahoo.com</a>
                 </div>
             </div>
-
-            <hr class="border-secondary my-4">
-
-            <div class="text-center">
-                <p class="mb-0 text-muted">&copy; 2026 Avotech Solutions. All Rights Reserved.</p>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Avotech Solutions. All Rights Reserved.</p>
             </div>
         </div>
     </footer>
 
-    <!-- Back to Top Button -->
-    <button id="backToTop" class="btn btn-warning rounded-circle shadow-lg" title="Back to top">
-        <i class="fas fa-arrow-up"></i>
-    </button>
+    <!-- Back to top -->
+    <button id="backToTop" title="Back to top" aria-label="Scroll back to top">&#8593;</button>
 
     <!-- Portfolio Modals -->
-    <div class="modal fade" id="portfolio1" tabindex="-1">
-        <div class="modal-dialog modal-lg">
-            <div class="modal-content rounded-4">
-                <div class="modal-header border-0">
-                    <h5 class="modal-title fw-600">Fruit Processing Plant</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
-                </div>
-                <div class="modal-body">
-                    <img src="https://images.unsplash.com/photo-1578500494158-246afb0d04de?auto=format&fit=crop&w=600&q=80" class="img-fluid rounded-3 mb-3" alt="Fruit Processing">
-                    <p>State-of-the-art fruit processing facility specializing in juice, jams, and dried fruits production. This project resulted in a 300% increase in production capacity and opened new market opportunities.</p>
-                    <h6>Key Achievements:</h6>
-                    <ul>
-                        <li>Complete facility setup and commissioning</li>
-                        <li>Advanced machinery installation</li>
-                        <li>Staff training and certification</li>
-                        <li>Market linkage establishment</li>
-                    </ul>
-                </div>
-            </div>
+    <div class="modal" id="portfolio1" role="dialog" aria-modal="true" aria-labelledby="portfolio1-title">
+        <div class="modal-backdrop" data-close="portfolio1"></div>
+        <div class="modal-dialog">
+            <button class="modal-close" data-close="portfolio1" aria-label="Close modal">&times;</button>
+            <img src="https://images.unsplash.com/photo-1616401784845-180882ba9ba8?auto=format&fit=crop&w=700&q=80" alt="Fruit Processing Plant">
+            <h3 id="portfolio1-title">Fruit Processing Plant</h3>
+            <p>State-of-the-art fruit processing facility specialising in juice, jams, and dried fruits production. This project resulted in a significant increase in production capacity and opened new market opportunities for the client.</p>
+            <h4>Key deliverables</h4>
+            <ul>
+                <li>Complete facility setup and commissioning</li>
+                <li>Advanced machinery installation and calibration</li>
+                <li>Staff training and quality certification</li>
+                <li>Market linkage and distributor network establishment</li>
+            </ul>
         </div>
     </div>
 
-    <div class="modal fade" id="portfolio2" tabindex="-1">
-        <div class="modal-dialog modal-lg">
-            <div class="modal-content rounded-4">
-                <div class="modal-header border-0">
-                    <h5 class="modal-title fw-600">Dairy Processing Unit</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
-                </div>
-                <div class="modal-body">
-                    <img src="https://images.unsplash.com/photo-1599974360606-8e4e47298f05?auto=format&fit=crop&w=600&q=80" class="img-fluid rounded-3 mb-3" alt="Dairy Processing">
-                    <p>Modern dairy processing facility equipped with pasteurization and cheese production capabilities. Fully operational with continuous market demand and excellent revenue generation.</p>
-                    <h6>Key Achievements:</h6>
-                    <ul>
-                        <li>Pasteurization system installation</li>
-                        <li>Cheese production line setup</li>
-                        <li>Quality control implementation</li>
-                        <li>Distributor network established</li>
-                    </ul>
-                </div>
-            </div>
+    <div class="modal" id="portfolio2" role="dialog" aria-modal="true" aria-labelledby="portfolio2-title">
+        <div class="modal-backdrop" data-close="portfolio2"></div>
+        <div class="modal-dialog">
+            <button class="modal-close" data-close="portfolio2" aria-label="Close modal">&times;</button>
+            <img src="https://images.unsplash.com/photo-1527018601619-a508a2be00cd?auto=format&fit=crop&w=700&q=80" alt="Dairy Processing Unit">
+            <h3 id="portfolio2-title">Dairy Processing Unit</h3>
+            <p>Modern dairy processing facility equipped with pasteurisation and cheese production capabilities. Fully operational with continuous market demand and strong revenue performance.</p>
+            <h4>Key deliverables</h4>
+            <ul>
+                <li>Pasteurisation system installation and commissioning</li>
+                <li>Cheese production line setup and calibration</li>
+                <li>Quality control system implementation</li>
+                <li>Distributor network established before launch</li>
+            </ul>
         </div>
     </div>
 
-    <div class="modal fade" id="portfolio3" tabindex="-1">
-        <div class="modal-dialog modal-lg">
-            <div class="modal-content rounded-4">
-                <div class="modal-header border-0">
-                    <h5 class="modal-title fw-600">Industrial Bakery</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
-                </div>
-                <div class="modal-body">
-                    <img src="https://images.unsplash.com/photo-1541519227354-08fa5d50c44d?auto=format&fit=crop&w=600&q=80" class="img-fluid rounded-3 mb-3" alt="Industrial Bakery">
-                    <p>Commercial bakery equipped with advanced ovens and automated packaging systems. Now an industry leader with widespread distribution and consistent growth in market share.</p>
-                    <h6>Key Achievements:</h6>
-                    <ul>
-                        <li>Advanced oven installation</li>
-                        <li>Automated packaging systems</li>
-                        <li>Product diversification</li>
-                        <li>Regional market expansion</li>
-                    </ul>
-                </div>
-            </div>
+    <div class="modal" id="portfolio3" role="dialog" aria-modal="true" aria-labelledby="portfolio3-title">
+        <div class="modal-backdrop" data-close="portfolio3"></div>
+        <div class="modal-dialog">
+            <button class="modal-close" data-close="portfolio3" aria-label="Close modal">&times;</button>
+            <img src="https://images.unsplash.com/photo-1541519227354-08fa5d50c44d?auto=format&fit=crop&w=700&q=80" alt="Industrial Bakery">
+            <h3 id="portfolio3-title">Industrial Bakery</h3>
+            <p>Commercial bakery equipped with advanced ovens and automated packaging systems. Now serving regional markets with a consistent growth trajectory in market share.</p>
+            <h4>Key deliverables</h4>
+            <ul>
+                <li>Advanced commercial oven installation</li>
+                <li>Automated packaging system setup</li>
+                <li>Product line diversification and recipe standardisation</li>
+                <li>Regional market expansion and distribution network</li>
+            </ul>
         </div>
     </div>
 
-    <!-- Bootstrap JS -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-    <!-- Custom JS -->
     <script src="script.js"></script>
 </body>
 </html>

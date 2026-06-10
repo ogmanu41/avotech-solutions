@@ -1,0 +1,8 @@
+# Prevent script execution inside upload folder
+Options -ExecCGI -Indexes
+RemoveHandler .php .phtml .php3 .php4 .php5 .php6 .php7 .pl .py .jsp .asp .htm .html .shtml .sh .cgi
+ForceType application/octet-stream
+<FilesMatch "(?i)\.(php|phtml|php3|php4|php5|php6|php7|pl|py|jsp|asp|shtml|sh|cgi)$">
+    Order deny,allow
+    Deny from all
+</FilesMatch>

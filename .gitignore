@@ -1,0 +1,23 @@
+# PHP logs and uploads
+/logs/*.log
+/uploads/*
+!/uploads/.htaccess
+!/logs/.htaccess
+
+# Next.js build and dependency directories
+avotech-next/node_modules/
+avotech-next/.next/
+avotech-next/out/
+avotech-next/build/
+avotech-next/.vercel/
+avotech-next/*.tsbuildinfo
+avotech-next/next-env.d.ts
+
+# Environment variables
+avotech-next/.env*
+
+# System & OS files
+.DS_Store
+Thumbs.db
+*.pem
+.vscode/
